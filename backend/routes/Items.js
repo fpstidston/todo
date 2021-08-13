@@ -1,7 +1,7 @@
 const express = require('express')
 const items = express.Router()
 
-const Item = require('../../models/Item')
+const Item = require('../models/Item')
 
 items.get('/', (req, res) => {
   Item.findAll()
